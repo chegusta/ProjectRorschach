@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="OSCMessage" load_steps=2 format=3 uid="uid://bsejga272vr67"]
+
+[ext_resource type="Script" path="res://OSCFunctionality/OSCMessage.gd" id="1_vfd6u"]
+
+[resource]
+script = ExtResource("1_vfd6u")
+message_adress = "/age"

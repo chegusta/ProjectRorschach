@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\nikol\.nuget\packages\;C:\Users\nikol\AppData\Roaming\Godot\mono\GodotNuGetFallbackFolder;C:\Microsoft\Xamarin\NuGet\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.4.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\nikol\.nuget\packages\" />
+    <SourceRoot Include="C:\Users\nikol\AppData\Roaming\Godot\mono\GodotNuGetFallbackFolder\" />
+    <SourceRoot Include="C:\Microsoft\Xamarin\NuGet\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)rug.osc.core\1.0.0\contentFiles\any\netstandard2.1\LICENSE.txt" Condition="Exists('$(NuGetPackageRoot)rug.osc.core\1.0.0\contentFiles\any\netstandard2.1\LICENSE.txt')">
+      <NuGetPackageId>Rug.Osc.Core</NuGetPackageId>
+      <NuGetPackageVersion>1.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>LICENSE.txt</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)rug.osc.core\1.0.0\contentFiles\any\netstandard2.1\README.txt" Condition="Exists('$(NuGetPackageRoot)rug.osc.core\1.0.0\contentFiles\any\netstandard2.1\README.txt')">
+      <NuGetPackageId>Rug.Osc.Core</NuGetPackageId>
+      <NuGetPackageVersion>1.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>README.txt</Link>
+    </Content>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(UserProfile)\AppData\Roaming\Godot\mono\GodotNuGetFallbackFolder\godot.sourcegenerators\4.0.3\build\Godot.SourceGenerators.props" Condition="Exists('$(UserProfile)\AppData\Roaming\Godot\mono\GodotNuGetFallbackFolder\godot.sourcegenerators\4.0.3\build\Godot.SourceGenerators.props')" />
+  </ImportGroup>
+</Project>

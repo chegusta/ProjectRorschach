@@ -1,0 +1,12 @@
+2a60927148abd1d33b818b535e306557
+::res://::1685383577
+icon.svg::CompressedTexture2D::7000608417966578913::1685382200::1685382209::1::::<><>::
+::res://OSCFunctionality/::1685383544
+new_osc_system_test_ground.tscn::PackedScene::2720055902872290647::1685383137::0::1::::<><>::res://OSCFunctionality/OSCReceiveHandler.cs<>res://OSCFunctionality/testShader.gdshader<>res://OSCFunctionality/ParticleTestReaction.gd
+OSCMessage.gd::GDScript::-1::1685382450::0::1::::OSCMessage<>Resource<>::
+OSCReceiveHandler.cs::CSharpScript::-1::1685383134::0::1::::<><>::
+OSCReceiver.cs::CSharpScript::-1::1685382925::0::1::::<><>::
+ParticleTestReaction.gd::GDScript::-1::1685382640::0::1::::<>SubViewportContainer<>::
+TestMessageOne.tres::Resource/Resource::722920649540071200::1685382455::0::1::::<><>::res://OSCFunctionality/OSCMessage.gd
+TestMessageTwo.tres::Resource/Resource::3658634591092830618::1685382455::0::1::::<><>::res://OSCFunctionality/OSCMessage.gd
+testShader.gdshader::Shader::-1::1685383288::0::1::::<><>::
