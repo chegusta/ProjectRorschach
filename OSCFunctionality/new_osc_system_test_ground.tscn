@@ -1,26 +1,20 @@
-[gd_scene load_steps=13 format=3 uid="uid://be0u6nl8kbk2r"]
+[gd_scene load_steps=14 format=3 uid="uid://be0u6nl8kbk2r"]
 
 [ext_resource type="Script" path="res://OSCFunctionality/OSCReceiveHandler.cs" id="1_corhy"]
-[ext_resource type="Shader" path="res://OSCFunctionality/testShader.gdshader" id="2_70top"]
+[ext_resource type="Shader" path="res://OSCFunctionality/testShader2.gdshader" id="2_il8ob"]
+[ext_resource type="Texture2D" uid="uid://7jk1qi3isf6m" path="res://Rorschachs/689px-Rorschach_blot_08.jpg" id="3_1yvm6"]
 [ext_resource type="Script" path="res://OSCFunctionality/ParticleTestReaction.gd" id="3_ls3rm"]
+[ext_resource type="Texture2D" uid="uid://cnitbvkdxyueh" path="res://Rorschachs/Rorschach_blot_05.jpg" id="4_5wp0s"]
+[ext_resource type="CompressedTexture2DArray" uid="uid://ht2yyi14w86r" path="res://Rorschachs/Rorschach_blot_01.jpg" id="5_e5aaa"]
 
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_1h2mj"]
-frequency = 0.0021
-fractal_type = 2
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_wocbj"]
-noise = SubResource("FastNoiseLite_1h2mj")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_tfcqb"]
-shader = ExtResource("2_70top")
-shader_parameter/c = Vector4(1, 1, 1, 1)
-shader_parameter/timeMultiplier = 1.0
-shader_parameter/uvScale = 16
-shader_parameter/dirChange = null
-shader_parameter/visMult = 0.5
-shader_parameter/bigScale = 1.0
-shader_parameter/angle = 0.0
-shader_parameter/noise = SubResource("NoiseTexture2D_wocbj")
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tgi4u"]
+shader = ExtResource("2_il8ob")
+shader_parameter/arrayIterator = 4
+shader_parameter/multR1 = 0.0
+shader_parameter/multR2 = 1.0
+shader_parameter/rorschach = ExtResource("3_1yvm6")
+shader_parameter/rorschach2 = ExtResource("4_5wp0s")
+shader_parameter/rorschachArray = ExtResource("5_e5aaa")
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_aqg74"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -47,10 +41,10 @@ emission_sphere_radius = 1.0
 direction = Vector3(0, 0, 0)
 gravity = Vector3(0, 0, 0)
 initial_velocity_max = 1.0
-tangential_accel_max = 28.3
+tangential_accel_max = 11.61
 scale_min = 0.0
 scale_max = 0.05
-attractor_interaction_enabled = false
+turbulence_noise_strength = 4.23
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h4285"]
 blend_mode = 1
@@ -69,7 +63,8 @@ oscMessages = PackedStringArray("/mess", "/age")
 port = 8000
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
-material = SubResource("ShaderMaterial_tfcqb")
+texture_repeat = 3
+material = SubResource("ShaderMaterial_tgi4u")
 use_parent_material = true
 anchors_preset = 15
 anchor_right = 1.0
@@ -88,21 +83,13 @@ render_target_update_mode = 4
 environment = SubResource("Environment_6tvdu")
 
 [node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.2209)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.53964)
 fov = 62.2832
 size = 0.05
 near = 0.001
 
 [node name="GPUParticles3D" type="GPUParticles3D" parent="SubViewportContainer/SubViewport"]
 amount = 30000
-lifetime = 0.1
+lifetime = 0.29
 process_material = SubResource("ParticleProcessMaterial_g5piy")
 draw_pass_1 = SubResource("SphereMesh_vbrsg")
-
-[node name="Node3D" type="Node3D" parent="SubViewportContainer/SubViewport/GPUParticles3D"]
-
-[node name="GPUParticlesAttractorSphere3D" type="GPUParticlesAttractorSphere3D" parent="SubViewportContainer/SubViewport/GPUParticles3D/Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.918697)
-strength = -128.0
-attenuation = 0.217637
-radius = 0.976169

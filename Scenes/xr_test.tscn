@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://dcxy47a72wxtl"]
+
+[ext_resource type="Script" path="res://Scenes/ManageXR.gd" id="1_prpum"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_erxag"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_j82xn"]
+sky_material = SubResource("ProceduralSkyMaterial_erxag")
+
+[sub_resource type="Environment" id="Environment_8ps08"]
+background_mode = 2
+sky = SubResource("Sky_j82xn")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="SphereMesh" id="SphereMesh_17jqd"]
+
+[node name="XRTest" type="Node3D"]
+script = ExtResource("1_prpum")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_8ps08")
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+world_scale = 3.0
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+mesh = SubResource("SphereMesh_17jqd")

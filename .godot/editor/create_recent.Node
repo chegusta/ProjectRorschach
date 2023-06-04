@@ -1,0 +1,12 @@
+Node3D
+OccluderInstance3D
+AnimationPlayer
+SpringArm3D
+XRCamera3D
+XROrigin3D
+Camera3D
+CSGMesh3D
+BoneAttachment3D
+Node
+GPUParticlesAttractorSphere3D
+GPUParticlesAttractorVectorField3D

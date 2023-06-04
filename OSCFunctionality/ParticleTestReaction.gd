@@ -5,13 +5,14 @@ extends SubViewportContainer
 
 var offSetCounter: float;
 var directionChanger: float;
+var switcher:bool;
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	osc.E1_On.connect(Offset)
+	osc.E1_On.connect(SwitchTexture1)
 	osc.E2_On.connect(Detile)
-	osc.E2_Off.connect(TileAgain)
+	#osc.E2_Off.connect(TileAgain)
 
 #func _process(delta):
 #	offSetCounter += delta
@@ -34,3 +35,15 @@ func Offset() -> void:
 	material.set_shader_parameter("dirChange", directionChanger)
 	offSetCounter += .5
 	material.set_shader_parameter("timeMultiplier", offSetCounter)
+
+func SwitchTexture1() -> void:
+	if switcher:
+		material.set_shader_parameter("multR1", 1);
+		material.set_shader_parameter("multR2", 0);
+		switcher = false;
+	else:
+		material.set_shader_parameter("multR1", 0);
+		material.set_shader_parameter("arrayIterator", randi_range(0,15))
+		material.set_shader_parameter("multR2", 1);
+		switcher = true;
+

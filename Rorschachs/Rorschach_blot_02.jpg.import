@@ -1,0 +1,26 @@
+[remap]
+
+importer="3d_texture"
+type="CompressedTexture3D"
+uid="uid://btaeiboeljkbh"
+path="res://.godot/imported/Rorschach_blot_02.jpg-786d80bdac49c0d39040e3e061b4f3d6.ctex3d"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Rorschachs/Rorschach_blot_02.jpg"
+dest_files=["res://.godot/imported/Rorschach_blot_02.jpg-786d80bdac49c0d39040e3e061b4f3d6.ctex3d"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+slices/horizontal=8
+slices/vertical=8

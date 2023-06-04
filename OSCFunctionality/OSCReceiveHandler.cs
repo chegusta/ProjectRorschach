@@ -15,7 +15,7 @@ public partial class OSCReceiveHandler : Node
 
 
     [Signal]
-    public delegate void E1_OnEventHandler();
+    public delegate void E1_OnEventHandler(float millisecs);
 
     [Signal]
     public delegate void E1_OffEventHandler();
@@ -65,12 +65,12 @@ public partial class OSCReceiveHandler : Node
 
                     if(messArray[0] == oscMessages[i])
                     {
-                        if(messArray[1].ToInt() > 0)
+                        if(messArray[1].ToFloat() > 0)
                         {
                             //GD.Print(oscMessages[i] + "on");
                             if(i == 0)
                             {
-                                EmitSignal(SignalName.E1_On);
+                                EmitSignal(SignalName.E1_On, messArray[1].ToFloat());
                             }
                             else if (i == 1)
                             {
