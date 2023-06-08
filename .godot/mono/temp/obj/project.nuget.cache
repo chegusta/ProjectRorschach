@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "N0FigJ4zgnUPvliDoNTT0b9VcnRQtPcDrULfypDe7Uum7MsMX/gBTAON5NWcBhT6H2LwoRzVY0ZOO3m88UNW0g==",
+  "dgSpecHash": "A0Lmy1sQ1aQaX6Vtre0nJwQvtuNhmy04ZvHhtqSnr+mhLwN0YIzKzH38X58/bbCctsNAQI+Od4AebBxV1iCjmg==",
   "success": true,
   "projectFilePath": "C:\\Users\\nikol\\Documents\\ProjectRorschachGit\\ProjectRorschach\\ProjectRorschach.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nikol\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder\\godot.sourcegenerators\\4.0.3\\godot.sourcegenerators.4.0.3.nupkg.sha512",
     "C:\\Users\\nikol\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder\\godotsharp\\4.0.3\\godotsharp.4.0.3.nupkg.sha512",
-    "C:\\Users\\nikol\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder\\godotsharpeditor\\4.0.3\\godotsharpeditor.4.0.3.nupkg.sha512",
-    "C:\\Users\\nikol\\.nuget\\packages\\rug.osc.core\\1.0.0\\rug.osc.core.1.0.0.nupkg.sha512"
+    "C:\\Users\\nikol\\.nuget\\packages\\rug.osc.core\\1.0.0\\rug.osc.core.1.0.0.nupkg.sha512",
+    "C:\\Users\\nikol\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.14\\microsoft.netcore.app.runtime.win-x64.6.0.14.nupkg.sha512",
+    "C:\\Users\\nikol\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.14\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.14.nupkg.sha512",
+    "C:\\Users\\nikol\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.14\\microsoft.aspnetcore.app.runtime.win-x64.6.0.14.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,4 +1,4 @@
-extends Node3D
+extends Node
 
 var interface: XRInterface
 var interface2: OpenXRInterface
@@ -14,6 +14,7 @@ func _ready():
 	if interface2 and interface2.is_initialized():
 		print("OPEN XR enabled")
 		get_viewport().use_xr = true
+		print(interface2.get_capabilities())
 	
 	interface2.connect("session_focussed", _xr_focussed)
 	interface2.connect("session_visible", _xr_visible)

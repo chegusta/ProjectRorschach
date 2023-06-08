@@ -34,10 +34,10 @@ func activate_tweens():
 	#var e = Vector3(randf_range(-1,1), end.position.y, end.position.z)
 	var e = enPos;
 	tweener.set_parallel(true)
-	tweener.tween_property(self, "position", e, tweenVal).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_EXPO)
-	tweener.tween_property(self, "rotation_degrees:x", 40, tweenVal).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_EXPO)
-	tweener.chain().tween_property(self, "position", stPos, tweenVal).set_ease(Tween.EASE_OUT)
-	tweener.parallel().tween_property(self, "rotation_degrees:x", 0, tweenVal).set_ease(Tween.EASE_OUT)
+	tweener.tween_property(self, "position", e, tweenVal).set_ease(Tween.EASE_IN).set_trans(Tween.TRANS_EXPO)
+	tweener.tween_property(self, "rotation_degrees:x", 40, tweenVal).set_ease(Tween.EASE_IN).set_trans(Tween.TRANS_EXPO)
+	tweener.chain().tween_property(self, "position", stPos, tweenVal).set_ease(Tween.EASE_IN)
+	tweener.parallel().tween_property(self, "rotation_degrees:x", 0, tweenVal).set_ease(Tween.EASE_IN)
 	tweener.tween_interval(tweenVal)
 
 

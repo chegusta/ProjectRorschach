@@ -1,8 +1,15 @@
 2a60927148abd1d33b818b535e306557
-::res://::1685814902
+::res://::1686212241
+EventBus.gd::GDScript::-1::1686139765::0::1::::<>Node<>::
 icon.svg::CompressedTexture2D::7000608417966578913::1685382200::1685382209::1::::<><>::
+MetaVerseRoomEnvironment.tres::Environment::1292842395946090510::1686149769::0::1::::<><>::
 openxr_action_map.tres::OpenXRActionMap::4370460286985999764::1685724000::0::1::::<><>::
-Tween_Collisions.gd::GDScript::-1::1685814599::0::1::::<>Node3D<>::
+Tween_Collisions.gd::GDScript::-1::1685890000::0::1::::<>Node3D<>::
+::res://Graphics/::1686149769
+ImpactShader.gdshader::Shader::-1::1685892369::0::1::::<><>::
+MetaVerseRoomEnvironment.tres::Environment::1292842395946090510::1685877230::0::1::::<><>::
+NewGlass.tres::StandardMaterial3D::5185196300825348169::1686149769::0::1::::<><>::
+ScreenSpaceFX.gdshader::Shader::-1::1686140298::0::1::::<><>::
 ::res://Meshes/::1685725418
 HeadBangerTestFranka.glb::PackedScene::7972319304379745690::1685722220::1685725418::1::::<><>::
 workroom.glb::PackedScene::6050926530260783031::1685720091::1685720332::1::::<><>::uid://ch6kwg5wtvme4<>uid://cfah1y4hqoato<>uid://2qoo36ulv6g0<>uid://ckdgqnb5e5rsr<>uid://esjgv24dmodf<>uid://ca7vi7xckxs1<>uid://3mrcn6irpd1<>uid://c8sqptpjiind7<>uid://bn3u7teqt355e<>uid://dfehokftqtw6e<>uid://cyy6lgs7gmwxp<>uid://b1ay2p7hbt2vn<>uid://xwk5gohh7oo4
@@ -19,10 +26,10 @@ workroom_TV_screen.png::CompressedTexture2D::1929005380772240377::1685720134::16
 workroom_White Plaster 01_baseColor.png::CompressedTexture2D::5124258340866968356::1685720131::1685720153::1::::<><>::
 workroom_wood1_base.png::CompressedTexture2D::318472487845729555::1685720141::1685720154::1::::<><>::
 workroom_Wood049_2K_Color.png::CompressedTexture2D::5328805803131896685::1685720128::1685720153::1::::<><>::
-::res://OSCFunctionality/::1685451099
-new_osc_system_test_ground.tscn::PackedScene::2720055902872290647::1685451098::0::1::::<><>::res://OSCFunctionality/OSCReceiveHandler.cs<>res://OSCFunctionality/testShader2.gdshader<>uid://7jk1qi3isf6m<>res://OSCFunctionality/ParticleTestReaction.gd<>uid://cnitbvkdxyueh<>uid://ht2yyi14w86r
+::res://OSCFunctionality/::1685879669
+new_osc_system_test_ground.tscn::PackedScene::2720055902872290647::1685879669::0::1::::<><>::res://OSCFunctionality/OSCReceiveHandler.cs<>res://OSCFunctionality/testShader2.gdshader<>uid://7jk1qi3isf6m<>res://OSCFunctionality/ParticleTestReaction.gd<>uid://cnitbvkdxyueh<>uid://ht2yyi14w86r
 OSCMessage.gd::GDScript::-1::1685382450::0::1::::OSCMessage<>Resource<>::
-OSCReceiveHandler.cs::CSharpScript::-1::1685814518::0::1::::<><>::
+OSCReceiveHandler.cs::CSharpScript::-1::1685816795::0::1::::<><>::
 OSCReceiver.cs::CSharpScript::-1::1685382925::0::1::::<><>::
 ParticleTestReaction.gd::GDScript::-1::1685447217::0::1::::<>SubViewportContainer<>::
 Rot.gd::GDScript::-1::1685447972::0::1::::<>Node3D<>::
@@ -45,9 +52,11 @@ Rorschach_blot_02.jpg::CompressedTexture3D::3720265941485440073::1685439027::168
 Rorschach_blot_04.jpg::CompressedTexture2D::1374868560964472760::1685439027::1685440024::1::::<><>::
 Rorschach_blot_05.jpg::CompressedTexture2D::5702967883975974767::1685439027::1685444045::1::::<><>::
 Rorschach_blot_06.jpg::CompressedTexture2D::4864635483881019350::1685439027::1685439027::1::::<><>::
-::res://Scenes/::1685814721
+::res://Scenes/::1686149769
 DistanceToCam.gd::GDScript::-1::1685811457::0::1::::<>SpringArm3D<>::
+GetHits.gd::GDScript::-1::1686139817::0::1::::<>Area3D<>::
 head_banger_test_franka.tscn::PackedScene::548658661670854147::1685722314::0::1::::<><>::uid://dlt3605yva8ju
-ManageXR.gd::GDScript::-1::1685724139::0::1::::<>Node3D<>::
-MetaVerseRoom.tscn::PackedScene::1955976119922000133::1685814721::0::1::::<><>::uid://cshd41splfxxv<>uid://h21lffvd5xe6<>res://Scenes/ManageXR.gd<>res://Tween_Collisions.gd<>res://OSCFunctionality/OSCReceiveHandler.cs
+ManageXR.gd::GDScript::-1::1685889551::0::1::::<>Node<>::
+MetaVerseRoom.tscn::PackedScene::1955976119922000133::1686149769::0::1::::<><>::uid://h21lffvd5xe6<>res://Scenes/ManageXR.gd<>uid://soi6py6nbqxi<>uid://ch6kwg5wtvme4<>uid://cfah1y4hqoato<>res://Tween_Collisions.gd<>res://Graphics/ScreenSpaceFX.gdshader<>uid://cf40op5ftl6e4<>res://Scenes/ScreenSpaceFX.gd<>res://OSCFunctionality/OSCReceiveHandler.cs<>uid://2qoo36ulv6g0<>uid://ckdgqnb5e5rsr<>uid://esjgv24dmodf<>uid://ca7vi7xckxs1<>uid://3mrcn6irpd1<>uid://c8sqptpjiind7<>uid://bn3u7teqt355e<>res://Scenes/GetHits.gd<>uid://dfehokftqtw6e<>uid://cyy6lgs7gmwxp<>uid://b1ay2p7hbt2vn<>uid://xwk5gohh7oo4
+ScreenSpaceFX.gd::GDScript::-1::1686139994::0::1::::<>MeshInstance3D<>::
 xr_test.tscn::PackedScene::7348631104786491085::1685809895::0::1::::<><>::res://Scenes/ManageXR.gd

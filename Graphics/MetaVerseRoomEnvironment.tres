@@ -1,0 +1,15 @@
+[gd_resource type="Environment" load_steps=3 format=3 uid="uid://soi6py6nbqxi"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_upf10"]
+turbidity = 42.09
+sun_disk_scale = 8.06
+energy_multiplier = 6.48
+
+[sub_resource type="Sky" id="Sky_s4kwh"]
+sky_material = SubResource("PhysicalSkyMaterial_upf10")
+
+[resource]
+sky = SubResource("Sky_s4kwh")
+ambient_light_color = Color(0.729412, 0.729412, 0.729412, 1)
+ssao_enabled = true
+ssil_enabled = true

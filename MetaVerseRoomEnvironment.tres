@@ -1,0 +1,13 @@
+[gd_resource type="Environment" load_steps=3 format=3 uid="uid://soi6py6nbqxi"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_upf10"]
+
+[sub_resource type="Sky" id="Sky_s4kwh"]
+sky_material = SubResource("PhysicalSkyMaterial_upf10")
+
+[resource]
+background_mode = 2
+background_energy_multiplier = 1.66
+sky = SubResource("Sky_s4kwh")
+ssao_enabled = true
+ssil_enabled = true

@@ -11,14 +11,24 @@ config_version=5
 [application]
 
 config/name="ProjectRorschach"
+run/main_scene="res://Scenes/MetaVerseRoom.tscn"
 config/features=PackedStringArray("4.0", "C#", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+EventBus="*res://EventBus.gd"
 
 [dotnet]
 
 project/assembly_name="ProjectRorschach"
 
+[physics]
+
+common/physics_ticks_per_second=20
+
 [xr]
 
 openxr/enabled=true
+openxr/view_configuration=1
 shaders/enabled=true

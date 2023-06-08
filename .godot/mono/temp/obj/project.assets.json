@@ -21,18 +21,44 @@
           }
         }
       },
-      "GodotSharpEditor/4.0.3": {
+      "Rug.Osc.Core/1.0.0": {
         "type": "package",
-        "dependencies": {
-          "GodotSharp": "4.0.3"
-        },
         "compile": {
-          "lib/net6.0/GodotSharpEditor.dll": {
+          "lib/netstandard2.1/Rug.Osc.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Rug.Osc.Core.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/netstandard2.1/LICENSE.txt": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.1/README.txt": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      }
+    },
+    "net6.0/win-x64": {
+      "Godot.SourceGenerators/4.0.3": {
+        "type": "package",
+        "build": {
+          "build/Godot.SourceGenerators.props": {}
+        }
+      },
+      "GodotSharp/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/GodotSharp.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/GodotSharpEditor.dll": {
+          "lib/net6.0/GodotSharp.dll": {
             "related": ".xml"
           }
         }
@@ -85,18 +111,6 @@
         "lib/net6.0/GodotSharp.xml"
       ]
     },
-    "GodotSharpEditor/4.0.3": {
-      "sha512": "FpyzFn/R+tn3IOdHZGQi7oNQwtLSXvCxg7dbxaYWyEudLrHmx6f7QMwTlrX1k4bcyfBXpTaBLGWmrpYdswTMyg==",
-      "type": "package",
-      "path": "godotsharpeditor/4.0.3",
-      "files": [
-        ".nupkg.metadata",
-        "godotsharpeditor.4.0.3.nupkg.sha512",
-        "godotsharpeditor.nuspec",
-        "lib/net6.0/GodotSharpEditor.dll",
-        "lib/net6.0/GodotSharpEditor.xml"
-      ]
-    },
     "Rug.Osc.Core/1.0.0": {
       "sha512": "fp7WKpbOTltrOt6IM9WC2wq9gm4hyDrWTFuCFgCBW+G2pJYEvFX4icLWxvcoh6WwOnlexq1YilFbxhjioWJB0g==",
       "type": "package",
@@ -118,7 +132,6 @@
     "net6.0": [
       "Godot.SourceGenerators >= 4.0.3",
       "GodotSharp >= 4.0.3",
-      "GodotSharpEditor >= 4.0.3",
       "Rug.Osc.Core >= 1.0.0"
     ]
   },
@@ -177,10 +190,6 @@
             "target": "Package",
             "version": "[4.0.3, )"
           },
-          "GodotSharpEditor": {
-            "target": "Package",
-            "version": "[4.0.3, )"
-          },
           "Rug.Osc.Core": {
             "target": "Package",
             "version": "[1.0.0, )"
@@ -197,12 +206,31 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+            "version": "[6.0.14, 6.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-x64",
+            "version": "[6.0.14, 6.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+            "version": "[6.0.14, 6.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
       }
     }
   }

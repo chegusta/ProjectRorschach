@@ -1,3 +1,9 @@
 res://Scenes/MetaVerseRoom.tscn
-res://Tween_Collisions.gd
-res://OSCFunctionality/new_osc_system_test_ground.tscn
+res://MetaVerseRoomEnvironment.tres
+res://Graphics/NewGlass.tres
+res://Graphics/ScreenSpaceFX.gdshader
+res://Graphics/Pixelate.gdshader
+res://Graphics/Abberation.gdshader
+res://Scenes/ScreenSpaceFX.gd
+res://Graphics/ViewportDeform.gdshader
+res://Scenes/GetHits.gd
