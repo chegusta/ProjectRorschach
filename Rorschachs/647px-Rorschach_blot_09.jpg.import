@@ -1,9 +1,9 @@
 [remap]
 
-importer="3d_texture"
-type="CompressedTexture3D"
-uid="uid://cnm58lrix68ud"
-path="res://.godot/imported/647px-Rorschach_blot_09.jpg-142b198f10fdfe88645b19c215314411.ctex3d"
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://der25idhk1wue"
+path="res://.godot/imported/647px-Rorschach_blot_09.jpg-142b198f10fdfe88645b19c215314411.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://Rorschachs/647px-Rorschach_blot_09.jpg"
-dest_files=["res://.godot/imported/647px-Rorschach_blot_09.jpg-142b198f10fdfe88645b19c215314411.ctex3d"]
+dest_files=["res://.godot/imported/647px-Rorschach_blot_09.jpg-142b198f10fdfe88645b19c215314411.ctex"]
 
 [params]
 
@@ -19,8 +19,16 @@ compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
+compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false
 mipmaps/limit=-1
-slices/horizontal=8
-slices/vertical=8
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

@@ -23,10 +23,6 @@ EventBus="*res://EventBus.gd"
 
 project/assembly_name="ProjectRorschach"
 
-[physics]
-
-common/physics_ticks_per_second=20
-
 [xr]
 
 openxr/enabled=true

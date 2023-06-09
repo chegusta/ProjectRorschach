@@ -1,3 +1,4 @@
+Camera3D
 Timer
 MeshInstance3D
 TextureRect
@@ -7,7 +8,6 @@ ColorRect
 Label
 Control
 Sprite3D
-Camera3D
 XRCamera3D
 CollisionShape3D
 Area3D

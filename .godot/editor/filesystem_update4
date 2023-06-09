@@ -1,9 +1,6 @@
 res://Scenes/MetaVerseRoom.tscn
 res://MetaVerseRoomEnvironment.tres
-res://Graphics/NewGlass.tres
 res://Graphics/ScreenSpaceFX.gdshader
-res://Graphics/Pixelate.gdshader
-res://Graphics/Abberation.gdshader
+res://Graphics/NewGlass.tres
+res://Graphics/ImpactShader.gdshader
 res://Scenes/ScreenSpaceFX.gd
-res://Graphics/ViewportDeform.gdshader
-res://Scenes/GetHits.gd

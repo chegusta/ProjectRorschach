@@ -9,6 +9,7 @@ uniform float stretch_multiplier;
 uniform float blackout;
 uniform float offset : hint_range(0.0, 1.0, 0.01);
 uniform float invert : hint_range(0., 1.0, 1.0);
+uniform float shake_intensity;
 
 float rand(vec2 co){
     return fract(sin(dot(co, vec2(12.9898, 78.233))) * 43758.5453);
@@ -23,9 +24,10 @@ void vertex(){
 void fragment() {
 	// Place fragment code here.
 	vec2 texCoords = SCREEN_UV;
-	float n = texture(displacement_noise, texCoords+TIME).r;
-	texCoords.x += n * impactIntensity;
+	float n = texture(displacement_noise, (texCoords*.5)-.75).r;
+	texCoords.x += n * (impactIntensity * sin(20.*TIME));
 	vec3 color = texture(screen_texture, texCoords).rgb;
+	
 	vec4 abberationColor = texture(screen_texture, SCREEN_UV);
 	abberationColor.r = texture(screen_texture,SCREEN_UV+abberation_value).r;
 	abberationColor.g = texture(screen_texture,vec2(SCREEN_UV.x+abberation_value, UV.y-abberation_value)).g;
@@ -45,7 +47,12 @@ void fragment() {
 	//use the threshold as mask again (transparent or not)
 	vec4 colGlitch= deformed;
 	colGlitch = mix(original, colGlitch, threshold);
-	ALBEDO = (abberationColor.rgb*abberation_value*.5) + color;
+	
+	vec2 shakeUV = SCREEN_UV;
+	shakeUV.x += sin(5.*TIME)*2.;
+	vec3 shakeTex = texture(screen_texture,shakeUV).rgb;
+	
+	ALBEDO = (abberationColor.rgb*abberation_value*.5) + color + shakeTex*shake_intensity;
 	ALBEDO = mix(ALBEDO, colGlitch.rgb, stretch_multiplier).rgb;
 	ALBEDO = mix(ALBEDO, vec3(0.,0.,0.), blackout).rgb;
 }
