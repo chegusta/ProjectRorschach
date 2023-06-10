@@ -1,0 +1,14 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=4 format=3 uid="uid://ddsirhl531j5c"]
+
+[ext_resource type="AudioStream" uid="uid://bknivpjygla6u" path="res://Audio/punch01.wav" id="1_d04wn"]
+[ext_resource type="AudioStream" uid="uid://bllvxyfgfqodi" path="res://Audio/punch02.wav" id="2_ot1g8"]
+[ext_resource type="AudioStream" uid="uid://d123x32083yrs" path="res://Audio/punch03.wav" id="3_je2uu"]
+
+[resource]
+streams_count = 3
+stream_0/stream = ExtResource("1_d04wn")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("2_ot1g8")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("3_je2uu")
+stream_2/weight = 1.0

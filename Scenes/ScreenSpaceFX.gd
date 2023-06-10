@@ -24,11 +24,9 @@ func apply_effect():
 		mat.set_shader_parameter("stretch_multiplier", 2.0);
 	if hits > 30:
 		mat.set_shader_parameter("abberation_value", 1.0)
-	timer.start()
 
 func reset_shader():
-	if hits < 50:
-		mat.set_shader_parameter("impactIntensity", 0.0) 
+	mat.set_shader_parameter("impactIntensity", 0.0)
 	mat.set_shader_parameter("stretch_multiplier", 0.0);
 	mat.set_shader_parameter("blackout", 0.0);
 	mat.set_shader_parameter("shake_intensity", 0.0)
