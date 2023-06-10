@@ -26,6 +26,8 @@ public partial class OSCReceiveHandler : Node
     [Signal]
     public delegate void E2_OffEventHandler();
 
+[Signal]
+    public delegate void OSCGeneralEventHandler(string messageName);
 
   private string[] msgNames;
 
@@ -65,6 +67,11 @@ public partial class OSCReceiveHandler : Node
 
                     if(messArray[0] == oscMessages[i])
                     {
+                        if(messArray[1].ToFloat() >0)
+                        {
+                            EmitSignal(SignalName.OSCGeneral, oscMessages[i]);
+                        }
+                        
                         if(messArray[1].ToFloat() > 0)
                         {
                             //GD.Print(oscMessages[i] + "on");

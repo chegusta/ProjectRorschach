@@ -10,9 +10,10 @@ var switcher:bool;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	osc.E1_On.connect(SwitchTexture1)
-	osc.E2_On.connect(Detile)
+	#osc.E1_On.connect(SwitchTexture1)
+	#osc.E2_On.connect(Detile)
 	#osc.E2_Off.connect(TileAgain)
+	osc.OSCGeneral.connect(print_message_name)
 
 #func _process(delta):
 #	offSetCounter += delta
@@ -47,3 +48,5 @@ func SwitchTexture1() -> void:
 		material.set_shader_parameter("multR2", 1);
 		switcher = true;
 
+func print_message_name(msg: String) -> void:
+	print(msg)

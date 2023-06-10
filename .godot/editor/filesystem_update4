@@ -5,3 +5,5 @@ res://Scenes/ScreenSpaceFX.gd
 res://Tween_Collisions.gd
 res://Scenes/GetHits.gd
 res://Audio/randomAudio.tres
+res://OSCFunctionality/ParticleTestReaction.gd
+res://OSCFunctionality/new_osc_system_test_ground.tscn

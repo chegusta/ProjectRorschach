@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://OSCFunctionality/OSCReceiveHandler.cs" id="1_corhy"]
 [ext_resource type="Shader" path="res://OSCFunctionality/testShader2.gdshader" id="2_il8ob"]
-[ext_resource type="Texture2D" uid="uid://7jk1qi3isf6m" path="res://Rorschachs/689px-Rorschach_blot_08.jpg" id="3_1yvm6"]
+[ext_resource type="Texture2D" uid="uid://bnvtc4nc2e4wb" path="res://Rorschachs/689px-Rorschach_blot_08.jpg" id="3_1yvm6"]
 [ext_resource type="Script" path="res://OSCFunctionality/ParticleTestReaction.gd" id="3_ls3rm"]
-[ext_resource type="Texture2D" uid="uid://cnitbvkdxyueh" path="res://Rorschachs/Rorschach_blot_05.jpg" id="4_5wp0s"]
-[ext_resource type="CompressedTexture2DArray" uid="uid://ht2yyi14w86r" path="res://Rorschachs/Rorschach_blot_01.jpg" id="5_e5aaa"]
+[ext_resource type="Texture2D" uid="uid://85rrysysvmf2" path="res://Rorschachs/Rorschach_blot_05.jpg" id="4_5wp0s"]
+[ext_resource type="Texture2D" uid="uid://cadeya8wc4pt" path="res://Rorschachs/Rorschach_blot_01.jpg" id="5_e5aaa"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tgi4u"]
 shader = ExtResource("2_il8ob")
