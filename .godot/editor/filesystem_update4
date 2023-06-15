@@ -1,9 +1,11 @@
 res://Scenes/MetaVerseRoom.tscn
+res://Audio/pent_regular.tres
+res://Audio/pent_chromatics.tres
+res://Audio/pentatonic.tres
 res://MetaVerseRoomEnvironment.tres
 res://Graphics/NewGlass.tres
-res://Scenes/ScreenSpaceFX.gd
-res://Tween_Collisions.gd
-res://Scenes/GetHits.gd
 res://Audio/randomAudio.tres
-res://OSCFunctionality/ParticleTestReaction.gd
-res://OSCFunctionality/new_osc_system_test_ground.tscn
+res://Graphics/ScreenSpaceFX.gdshader
+res://Scenes/ScreenSpaceFX.gd
+res://Audio_Jam.gd
+res://Tween_Collisions.gd

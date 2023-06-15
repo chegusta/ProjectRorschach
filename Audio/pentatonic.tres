@@ -1,0 +1,13 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://bkvcpw00tickt"]
+
+[ext_resource type="AudioStream" uid="uid://nnq5jwt51sty" path="res://Audio/pent_regular.tres" id="1_8m1oi"]
+[ext_resource type="AudioStream" uid="uid://cdd53bkkcc8v2" path="res://Audio/pent_chromatics.tres" id="1_rr0kq"]
+
+[resource]
+streams_count = 2
+playback_mode = 1
+random_pitch = 1.0
+stream_0/stream = ExtResource("1_8m1oi")
+stream_0/weight = 100.0
+stream_1/stream = ExtResource("1_rr0kq")
+stream_1/weight = 1.0

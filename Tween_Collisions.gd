@@ -5,6 +5,7 @@ extends Node3D
 #var mx: float
 #var my: float
 
+var head_bang_speed: float = 2000
 var tweener: Tween;
 
 @onready var start = $"../Start"
@@ -58,3 +59,12 @@ func endTween():
 
 func change_speed_var(osc_input: float):
 	tweener.set_speed_scale(1000./osc_input)
+
+func _process(delta):
+	head_bang_speed += (Input.get_axis("LYAxisUP", "LYAxisDOWN")) * 4.
+	#print(Input.get_axis("LYAxisUP", "LYAxisDOWN"))
+	if(head_bang_speed < 70):
+			head_bang_speed = 70
+	if(head_bang_speed > 2000):
+			head_bang_speed = 2000
+	change_speed_var(head_bang_speed)

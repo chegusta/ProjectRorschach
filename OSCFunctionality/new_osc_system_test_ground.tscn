@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://be0u6nl8kbk2r"]
+[gd_scene load_steps=15 format=3 uid="uid://be0u6nl8kbk2r"]
 
 [ext_resource type="Script" path="res://OSCFunctionality/OSCReceiveHandler.cs" id="1_corhy"]
 [ext_resource type="Shader" path="res://OSCFunctionality/testShader2.gdshader" id="2_il8ob"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://OSCFunctionality/ParticleTestReaction.gd" id="3_ls3rm"]
 [ext_resource type="Texture2D" uid="uid://85rrysysvmf2" path="res://Rorschachs/Rorschach_blot_05.jpg" id="4_5wp0s"]
 [ext_resource type="Texture2D" uid="uid://cadeya8wc4pt" path="res://Rorschachs/Rorschach_blot_01.jpg" id="5_e5aaa"]
+[ext_resource type="Script" path="res://Audio_Jam.gd" id="7_1nmcx"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tgi4u"]
 shader = ExtResource("2_il8ob")
@@ -93,3 +94,7 @@ amount = 30000
 lifetime = 0.29
 process_material = SubResource("ParticleProcessMaterial_g5piy")
 draw_pass_1 = SubResource("SphereMesh_vbrsg")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="SubViewportContainer/SubViewport"]
+autoplay = true
+script = ExtResource("7_1nmcx")

@@ -3,6 +3,7 @@ render_mode unshaded, depth_test_disabled, cull_disabled;
 
 uniform sampler2D displacement_noise;
 uniform sampler2D screen_texture : hint_screen_texture;
+uniform sampler2D instruction;
 uniform float impactIntensity;
 uniform float abberation_value;
 uniform float stretch_multiplier;
@@ -10,6 +11,25 @@ uniform float blackout;
 uniform float offset : hint_range(0.0, 1.0, 0.01);
 uniform float invert : hint_range(0., 1.0, 1.0);
 uniform float shake_intensity;
+uniform float text_strength;
+uniform float shader_trans;
+uniform int pixel_size;
+uniform float pixelation;
+
+vec3 screen(vec3 base, vec3 blend){
+	return 1.0 - (1.0 - base) * (1.0 - blend);
+}
+
+
+vec2 scale(vec2 uv, float x, float y)
+{
+	mat2 scale = mat2(vec2(x, 0.0), vec2(0.0, y));
+	
+	uv -= 0.5;
+	uv = uv * scale;
+	uv += 0.5;
+	return uv;
+}
 
 float rand(vec2 co){
     return fract(sin(dot(co, vec2(12.9898, 78.233))) * 43758.5453);
@@ -51,8 +71,24 @@ void fragment() {
 	vec2 shakeUV = SCREEN_UV;
 	shakeUV.x += sin(5.*TIME)*2.;
 	vec3 shakeTex = texture(screen_texture,shakeUV).rgb;
+
+	vec2 instrUV = SCREEN_UV;
+	instrUV = scale(instrUV, 3., 3.);
+	vec4 instrTex = texture(instruction, instrUV);
 	
-	ALBEDO = (abberationColor.rgb*abberation_value*.5) + color + shakeTex*shake_intensity;
-	ALBEDO = mix(ALBEDO, colGlitch.rgb, stretch_multiplier).rgb;
-	ALBEDO = mix(ALBEDO, vec3(0.,0.,0.), blackout).rgb;
+	vec3 newScreen = (abberationColor.rgb*abberation_value*.5) + color + shakeTex*shake_intensity;
+	vec3 withGlitch = mix(newScreen, colGlitch.rgb, threshold);
+	vec3 fin = mix(newScreen, withGlitch, stretch_multiplier);
+	
+	//pixelation
+	float x = float (int(FRAGCOORD.x) % pixel_size);
+	float y = float (int(FRAGCOORD.y) % pixel_size);
+	
+	x = FRAGCOORD.x + floor(float(pixel_size) / 2.0) - x;
+	y = FRAGCOORD.y + floor(float(pixel_size) / 2.0) - y;
+	
+	vec3 pixelated = texture(screen_texture, vec2(x,y) / VIEWPORT_SIZE).xyz;
+	vec3 finfin = mix(original.rgb, fin, shader_trans);
+	ALBEDO = mix(finfin, pixelated, pixelation);
+	ALPHA = 1.-instrTex.a*text_strength;
 }

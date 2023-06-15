@@ -1,6 +1,7 @@
+Timer
+Label3D
 AudioStreamPlayer
 Camera3D
-Timer
 MeshInstance3D
 TextureRect
 SubViewportContainer
@@ -12,7 +13,6 @@ Sprite3D
 XRCamera3D
 CollisionShape3D
 Area3D
-Label3D
 CanvasLayer
 CSGBox3D
 Node

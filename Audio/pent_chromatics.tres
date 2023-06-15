@@ -1,0 +1,23 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=7 format=3 uid="uid://cdd53bkkcc8v2"]
+
+[ext_resource type="AudioStream" uid="uid://egj33wqm7esk" path="res://Audio/chr-11.wav" id="1_frsab"]
+[ext_resource type="AudioStream" uid="uid://bdq34udh3nxlg" path="res://Audio/chr-12.wav" id="2_ckwux"]
+[ext_resource type="AudioStream" uid="uid://cmg768ayo80qg" path="res://Audio/chr-13.wav" id="3_5r2qo"]
+[ext_resource type="AudioStream" uid="uid://d3rw8q4v8rovy" path="res://Audio/chr-14.wav" id="4_2tvja"]
+[ext_resource type="AudioStream" uid="uid://bdsgiepqlxqsp" path="res://Audio/chr-15.wav" id="5_kp7fa"]
+[ext_resource type="AudioStream" uid="uid://c3smei8x4uyvt" path="res://Audio/chr-16.wav" id="6_b4mj2"]
+
+[resource]
+streams_count = 6
+stream_0/stream = ExtResource("1_frsab")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("2_ckwux")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("3_5r2qo")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("4_2tvja")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("5_kp7fa")
+stream_4/weight = 1.0
+stream_5/stream = ExtResource("6_b4mj2")
+stream_5/weight = 1.0
