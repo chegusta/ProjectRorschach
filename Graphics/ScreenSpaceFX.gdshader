@@ -15,6 +15,8 @@ uniform float text_strength;
 uniform float shader_trans;
 uniform int pixel_size;
 uniform float pixelation;
+uniform float vignette_value : hint_range(0.0,1.0);
+uniform sampler2D vignette_noise;
 
 vec3 screen(vec3 base, vec3 blend){
 	return 1.0 - (1.0 - base) * (1.0 - blend);
@@ -90,5 +92,13 @@ void fragment() {
 	vec3 pixelated = texture(screen_texture, vec2(x,y) / VIEWPORT_SIZE).xyz;
 	vec3 finfin = mix(original.rgb, fin, shader_trans);
 	ALBEDO = mix(finfin, pixelated, pixelation);
-	ALPHA = 1.-instrTex.a*text_strength;
+	
+	
+	float vn = texture(vignette_noise, SCREEN_UV+TIME*.1).r;
+	vec2 cUV = SCREEN_UV-.5;
+	float d = length(cUV);
+	d = smoothstep(0.0,vignette_value, d*vn);
+	
+	ALBEDO = mix(ALBEDO, vec3(0.), d-.3);
+	ALPHA = 1.-instrTex.a*text_strength + d;
 }

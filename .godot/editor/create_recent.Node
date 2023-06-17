@@ -1,6 +1,9 @@
-Timer
-Label3D
 AudioStreamPlayer
+GPUParticlesAttractorSphere3D
+GPUParticles3D
+Timer
+Node3D
+Label3D
 Camera3D
 MeshInstance3D
 TextureRect
@@ -17,12 +20,10 @@ CanvasLayer
 CSGBox3D
 Node
 DirectionalLight3D
-Node3D
 OccluderInstance3D
 AnimationPlayer
 SpringArm3D
 XROrigin3D
 CSGMesh3D
 BoneAttachment3D
-GPUParticlesAttractorSphere3D
 GPUParticlesAttractorVectorField3D

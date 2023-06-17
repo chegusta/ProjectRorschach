@@ -1,0 +1,33 @@
+[gd_resource type="ShaderMaterial" load_steps=6 format=3 uid="uid://c5enw4025fsjj"]
+
+[ext_resource type="Shader" path="res://Graphics/ScreenSpaceFX.gdshader" id="1_nh1k4"]
+[ext_resource type="Texture2D" uid="uid://d0jsydi1rmm22" path="res://Rorschachs/Rorschach_blot_04.jpg" id="2_m1wm8"]
+[ext_resource type="Texture2D" uid="uid://cl7nxgchq2vc3" path="res://Rorschachs/ObjDelusion.png" id="3_vf4ps"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_l1fbw"]
+frequency = 0.001
+fractal_lacunarity = 1.625
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_beqcj"]
+seamless = true
+seamless_blend_skirt = 0.371
+noise = SubResource("FastNoiseLite_l1fbw")
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_nh1k4")
+shader_parameter/impactIntensity = 0.0
+shader_parameter/abberation_value = 0.0
+shader_parameter/stretch_multiplier = 0.0
+shader_parameter/blackout = 0.0
+shader_parameter/offset = 0.0
+shader_parameter/invert = 0.0
+shader_parameter/shake_intensity = 0.0
+shader_parameter/text_strength = 0.0
+shader_parameter/shader_trans = 0.0
+shader_parameter/pixel_size = 1
+shader_parameter/pixelation = null
+shader_parameter/vignette_value = 1.0
+shader_parameter/displacement_noise = ExtResource("2_m1wm8")
+shader_parameter/instruction = ExtResource("3_vf4ps")
+shader_parameter/vignette_noise = SubResource("NoiseTexture2D_beqcj")

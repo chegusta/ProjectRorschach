@@ -1,0 +1,16 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://grpqiyb23m4y"]
+
+[ext_resource type="Shader" path="res://Scenes/FinalShader.gdshader" id="1_nljpc"]
+[ext_resource type="Texture2D" uid="uid://d0jsydi1rmm22" path="res://Rorschachs/Rorschach_blot_04.jpg" id="2_ydfcb"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_nljpc")
+shader_parameter/impactIntensity = 1.711
+shader_parameter/stretch_multiplier = 0.587
+shader_parameter/offset = 0.5
+shader_parameter/invert = 0.0
+shader_parameter/pixel_size = 1
+shader_parameter/pixelation = 1.0
+shader_parameter/shader_trans = 1.0
+shader_parameter/displacement_noise = ExtResource("2_ydfcb")

@@ -11,3 +11,7 @@ background_energy_multiplier = 1.66
 sky = SubResource("Sky_s4kwh")
 ssao_enabled = true
 ssil_enabled = true
+sdfgi_read_sky_light = false
+sdfgi_bounce_feedback = 0.38
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.1167
