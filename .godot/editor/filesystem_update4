@@ -1,4 +1,5 @@
 res://Scenes/MetaVerseRoom.tscn
+res://Graphics/SecondGlitch.tres
 res://Audio/pent_regular.tres
 res://Audio/pent_chromatics.tres
 res://Audio/pentatonic.tres
@@ -6,17 +7,7 @@ res://Audio/strings_regular.tres
 res://Audio/strings_glitched.tres
 res://Audio/strings.tres
 res://MetaVerseRoomEnvironment.tres
-res://Graphics/ScreenSpaceFX.gdshader
 res://Graphics/NewGlass.tres
-res://Audio/randomAudio.tres
-res://Scenes/ScreenSpaceFX.gd
-res://Audio/punch_glitched.tres
-res://EventBus.gd
-res://Scenes/Toggle_Visiblity.gd
 res://Graphics/FirstGlitchMaterial.tres
-res://Scenes/FinalShader.gdshader
-res://Graphics/SecondGlitch.tres
-res://Scenes/partycles.tscn
-res://Audio_Jam.gd
-res://Tween_Collisions.gd
-res://default_bus_layout.tres
+res://Audio/punch_glitched.tres
+res://Audio/randomAudio.tres
