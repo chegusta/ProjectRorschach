@@ -11,8 +11,22 @@ uniform int pixel_size;
 uniform float pixelation;
 uniform float shader_trans;
 
+uniform float rorScale;
+uniform float rorMove;
+
 vec3 screen(vec3 base, vec3 blend){
 	return 1.0 - (1.0 - base) * (1.0 - blend);
+}
+
+vec2 rotate(vec2 uv, vec2 pivot, float angle)
+{
+	mat2 rotation = mat2(vec2(sin(angle), -cos(angle)),
+						vec2(cos(angle), sin(angle)));
+	
+	uv -= pivot;
+	uv = uv * rotation;
+	uv += pivot;
+	return uv;
 }
 
 
@@ -42,7 +56,11 @@ void fragment() {
 	float n = texture(displacement_noise, (texCoords*.5)-.75).r;
 	texCoords.x += n * (impactIntensity * sin(20.*TIME));
 	vec3 color = texture(screen_texture, texCoords).rgb;
-	float rorschachs = texture(displacement_noise, SCREEN_UV).g;
+	vec2 rorUVs = SCREEN_UV;
+	rorUVs = scale(rorUVs, rorScale, rorScale);
+	rorUVs.x += rorMove;
+	rorUVs = rotate(rorUVs, vec2(.5), TIME);
+	float rorschachs = texture(displacement_noise, rorUVs).g;
 	vec3 rorschachsC = vec3(rorschachs);
 	
 	vec2 uv = SCREEN_UV;
@@ -72,5 +90,5 @@ void fragment() {
 	vec3 pixelated = texture(screen_texture, vec2(x,y) / VIEWPORT_SIZE).xyz;
 	vec3 finfin = mix(original.rgb+rorschachsC, color, shader_trans);
 	ALBEDO = mix(finfin, pixelated, pixelation);
-	
+	ALPHA = rorschachsC.r*.5;
 }

@@ -16,7 +16,6 @@ var strings_speed: float = 2
 func _ready():
 	stream = streamo
 	play()
-	print("audio Ready")
 	#tim.timeout.connect(play_audio)
 	#finished.connect(play_audio)
 	tim.timeout.connect(play_audio)

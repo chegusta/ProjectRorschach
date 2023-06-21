@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddsq0d31gobb8"]
+
+[ext_resource type="Script" path="res://Scenes/ManageXR.gd" id="1_0roqr"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_pcg03"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_h53c6"]
+sky_material = SubResource("ProceduralSkyMaterial_pcg03")
+
+[sub_resource type="Environment" id="Environment_yuca1"]
+background_mode = 1
+sky = SubResource("Sky_h53c6")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_0roqr")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_yuca1")
+
+[node name="XROrigin" type="XROrigin3D" parent="."]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin"]

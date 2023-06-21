@@ -17,6 +17,7 @@ var enPos: Vector3
 
 var tweenVal: float = 1.
 var tweenSpeed: float = 1
+var isEndGame: bool = false
 
 func _ready():
 	stPos = start.position
@@ -24,6 +25,7 @@ func _ready():
 	#enPos = Vector3(randf_range(-1,1), end.position.y, end.position.z)
 	initiate_tween()
 	EventBus.onImpact.connect(shake_origin)
+	EventBus.onEndgame.connect(func(): isEndGame = true)
 
 func initiate_tween():
 	tweener = create_tween()
@@ -35,6 +37,8 @@ func activate_tweens():
 	var e = Vector3(randf_range(2.4,1.5), end.position.y, end.position.z)
 	stPos = Vector3(randf_range(1.8, 1.6), start.position.y, start.position.z)
 	#var e = enPos;
+	if(isEndGame):
+		tweenVal = randf_range(.3,1.4)
 	tweener.set_parallel(true)
 	tweener.tween_property(self, "position", e, tweenVal).set_ease(Tween.EASE_IN).set_trans(Tween.TRANS_EXPO)
 	tweener.tween_property(self, "rotation_degrees:x", 40, tweenVal).set_ease(Tween.EASE_IN).set_trans(Tween.TRANS_EXPO)
