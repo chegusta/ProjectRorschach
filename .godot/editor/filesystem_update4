@@ -1,4 +1,3 @@
-res://default_bus_layout.tres
 res://Scenes/MetaVerseRoom.tscn
 res://Graphics/SecondGlitch.tres
 res://MetaVerseRoomEnvironment.tres
@@ -12,10 +11,13 @@ res://Audio/strings_glitched.tres
 res://Audio/strings.tres
 res://Audio/punch_glitched.tres
 res://Audio/randomAudio.tres
-res://EventBus.gd
-res://Scenes/ScreenSpaceFX.gd
-res://Tween_Collisions.gd
-res://BetweenSeene.tscn
-res://Scenes/ManageXR.gd
 res://Scenes/SceneManagement.gd
-res://Audio_Jam.gd
+res://Tween_Collisions.gd
+res://Scenes/ScreenSpaceFX.gd
+res://Scenes/BetweenSeene.tscn
+res://Scenes/BetweenSeene.gd
+res://Scenes/ManageXR.gd
+res://Scenes/partycles.tscn
+res://Scenes/GameStartFunctions.gd
+res://EventBus.gd
+res://Scenes/SnapPics.gd

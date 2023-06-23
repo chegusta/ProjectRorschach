@@ -12,6 +12,7 @@ var influence_env: bool = false
 @onready var glitch_punch = $GlitchPunch
 @onready var drone = $Drone
 @onready var end_timer = $EndTimer
+@onready var first_mat = preload("res://Graphics/FirstGlitchMaterial.tres")
 @onready var second_mat = preload("res://Graphics/SecondGlitch.tres")
 var vignette: float = 1
 
@@ -21,6 +22,10 @@ var partycles = preload("res://Scenes/partycles.tscn")
 var pixel_sizes: Array[int] = [32,64,128]
 
 func _ready():
+	var del: Array = get_tree().get_nodes_in_group("Particles")
+	for p in del:
+		p.queue_free()
+		reset_mat()
 	EventBus.onImpact.connect(apply_effect)
 	EventBus.onImpact.connect(func(): hits+=1)
 	timer.timeout.connect(reset_shader)
@@ -31,6 +36,7 @@ func _ready():
 	vignette_timer.timeout.connect(func(): EventBus.onEndgame.emit())
 	end_timer.timeout.connect(func(): EventBus.onRorschach.emit())
 	end_timer.timeout.connect(change_mat)
+	hits = 0
 
 func apply_effect():
 	mat.set_shader_parameter("impactIntensity", 1.0)
@@ -85,3 +91,12 @@ func change_mat():
 	influence_env = true
 	var p = partycles.instantiate()
 	get_tree().root.add_child(p)
+
+func reset_mat():
+	material_override = first_mat
+	mat = get_active_material(0)
+	influence_env = false
+	env.environment.background_mode = Environment.BG_SKY
+	
+	
+

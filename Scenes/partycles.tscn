@@ -23,7 +23,7 @@ billboard_mode = 1
 material = SubResource("StandardMaterial3D_kyb8d")
 size = Vector2(0.2, 0.2)
 
-[node name="Partycles" type="GPUParticles3D"]
+[node name="Partycles" type="GPUParticles3D" groups=["Particles"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.69542, 1.08984, 9.25311)
 amount = 20000
 explosiveness = 0.06

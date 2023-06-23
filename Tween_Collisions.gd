@@ -18,12 +18,14 @@ var enPos: Vector3
 var tweenVal: float = 1.
 var tweenSpeed: float = 1
 var isEndGame: bool = false
+var game_start: bool = false
 
 func _ready():
 	stPos = start.position
 	enPos = end.position
 	#enPos = Vector3(randf_range(-1,1), end.position.y, end.position.z)
-	initiate_tween()
+	#initiate_tween()
+	set_process(false)
 	EventBus.onImpact.connect(shake_origin)
 	EventBus.onEndgame.connect(func(): isEndGame = true)
 
@@ -61,6 +63,13 @@ func endTween():
 	tweener.kill
 	initiate_tween()
 
+func _input(event):
+	if Input.is_action_pressed("LYAxisUP") and game_start == false:
+		Engine.time_scale = 1
+		
+		game_start = true
+		initiate_tween()
+		set_process(true)
 
 func change_speed_var(osc_input: float):
 	tweener.set_speed_scale(1000./osc_input)

@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://c12sj2i6rdkl3"]
+[gd_scene load_steps=2 format=3 uid="uid://c12sj2i6rdkl3"]
+
+[ext_resource type="Script" path="res://Scenes/BetweenSeene.gd" id="1_r5gqo"]
 
 [node name="BetweenSeene" type="Node2D"]
+script = ExtResource("1_r5gqo")
