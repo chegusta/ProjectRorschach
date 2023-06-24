@@ -14,6 +14,8 @@ uniform float shader_trans;
 uniform float rorScale;
 uniform float rorMove;
 
+uniform sampler2D instr;
+
 vec3 screen(vec3 base, vec3 blend){
 	return 1.0 - (1.0 - base) * (1.0 - blend);
 }
@@ -90,5 +92,10 @@ void fragment() {
 	vec3 pixelated = texture(screen_texture, vec2(x,y) / VIEWPORT_SIZE).xyz;
 	vec3 finfin = mix(original.rgb+rorschachsC, color, shader_trans);
 	ALBEDO = mix(finfin, pixelated, pixelation);
-	ALPHA = rorschachsC.r*.5;
+	
+	vec2 instrUV = SCREEN_UV;
+	instrUV = scale(instrUV, 3., 3.);
+	vec4 instrTex = texture(instr, instrUV);
+	
+	ALPHA = rorschachsC.r*.8;
 }

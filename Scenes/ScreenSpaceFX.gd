@@ -15,6 +15,7 @@ var influence_env: bool = false
 @onready var first_mat = preload("res://Graphics/FirstGlitchMaterial.tres")
 @onready var second_mat = preload("res://Graphics/SecondGlitch.tres")
 var vignette: float = 1
+@onready var end_text = $EndGameInstr
 
 var partycles = preload("res://Scenes/partycles.tscn")
 
@@ -36,7 +37,12 @@ func _ready():
 	vignette_timer.timeout.connect(func(): EventBus.onEndgame.emit())
 	end_timer.timeout.connect(func(): EventBus.onRorschach.emit())
 	end_timer.timeout.connect(change_mat)
+	end_timer.timeout.connect(func(): end_text.visible = true)
 	hits = 0
+	reset_shader()
+	reset_mat()
+	vignette = vignette_timer.time_left / vignette_timer.wait_time
+	mat.set_shader_parameter("vignette_value", vignette)
 
 func apply_effect():
 	mat.set_shader_parameter("impactIntensity", 1.0)
@@ -69,7 +75,7 @@ func reset_shader():
 	mat.set_shader_parameter("pixelation", 0)
 	mat.set_shader_parameter("shader_trans", 0)
 	mat.set_shader_parameter("text_strength", 0)
-	mat.set_shader_parameter("rorScale", randf_range(.2,1))
+	mat.set_shader_parameter("rorScale", randf_range(.5,1))
 	mat.set_shader_parameter("rorMove", randf_range(-1,1))
 	if influence_env == true:
 		env.environment.background_mode = Environment.BG_COLOR

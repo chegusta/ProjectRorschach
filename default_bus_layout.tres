@@ -1,4 +1,4 @@
-[gd_resource type="AudioBusLayout" load_steps=2 format=3 uid="uid://ba6vfwv3pv6ms"]
+[gd_resource type="AudioBusLayout" load_steps=3 format=3 uid="uid://ba6vfwv3pv6ms"]
 
 [sub_resource type="AudioEffectReverb" id="AudioEffectReverb_mvmla"]
 resource_name = "Reverb"
@@ -10,6 +10,9 @@ hipass = 0.6
 dry = 0.66
 wet = 0.9
 
+[sub_resource type="AudioEffectDelay" id="AudioEffectDelay_xival"]
+resource_name = "Delay"
+
 [resource]
 bus/1/name = &"Delusion"
 bus/1/solo = false
@@ -19,3 +22,11 @@ bus/1/volume_db = -22.5851
 bus/1/send = &"Master"
 bus/1/effect/0/effect = SubResource("AudioEffectReverb_mvmla")
 bus/1/effect/0/enabled = true
+bus/2/name = &"SNAP"
+bus/2/solo = false
+bus/2/mute = false
+bus/2/bypass_fx = false
+bus/2/volume_db = 0.0
+bus/2/send = &"Master"
+bus/2/effect/0/effect = SubResource("AudioEffectDelay_xival")
+bus/2/effect/0/enabled = true

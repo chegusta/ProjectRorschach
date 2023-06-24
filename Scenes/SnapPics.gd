@@ -1,13 +1,16 @@
 extends SubViewportContainer
 
 @onready var vp: SubViewport = $SubViewport
+@onready var audio: AudioStreamPlayer = $SubViewport/AudioStreamPlayer
+
+var is_end_game: bool = false
+
+func _ready():
+	is_end_game = false
+	EventBus.onEndgame.connect(func(): is_end_game = true)
 
 func _input(event):
-#	if event.is_action_released("ui_accept") and xr_active == false:
-#		_xr_focussed()
-#	if event.is_action_released("ui_cancel") and xr_active == true:
-#		_xr_off()
-	if event.is_action_released("ui_accept"):
+	if event.is_action_released("Snap") and is_end_game:
 		snap_pic()
 
 func snap_pic():
@@ -17,4 +20,4 @@ func snap_pic():
 	time = time.replace(":","_")
 	var save_path = "user://test" + time + ".png"
 	pic.save_png(save_path)
-	print(save_path)
+	audio.play()
