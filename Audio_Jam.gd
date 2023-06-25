@@ -25,6 +25,8 @@ func _ready():
 	EventBus.onRorschach.connect(func(): tim.stop())
 	EventBus.onRorschach.connect(func(): tinitus.play())
 	EventBus.onRorschach.connect(func(): bang.play())
+	AudioServer.set_bus_volume_db(0, -80)
+	EventBus.onStartGame.connect(func(): AudioServer.set_bus_volume_db(0, 0))
 
 func play_audio():
 	play()

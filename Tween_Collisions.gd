@@ -66,8 +66,8 @@ func endTween():
 func _input(event):
 	if Input.is_action_pressed("LYAxisUP") and game_start == false:
 		Engine.time_scale = 1
-		
 		game_start = true
+		EventBus.onStartGame.emit()
 		initiate_tween()
 		set_process(true)
 

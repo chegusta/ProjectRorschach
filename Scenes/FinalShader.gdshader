@@ -13,6 +13,7 @@ uniform float shader_trans;
 
 uniform float rorScale;
 uniform float rorMove;
+uniform float rorRot;
 
 uniform sampler2D instr;
 
@@ -61,7 +62,7 @@ void fragment() {
 	vec2 rorUVs = SCREEN_UV;
 	rorUVs = scale(rorUVs, rorScale, rorScale);
 	rorUVs.x += rorMove;
-	rorUVs = rotate(rorUVs, vec2(.5), TIME);
+	rorUVs = rotate(rorUVs, vec2(.5), rorRot);
 	float rorschachs = texture(displacement_noise, rorUVs).g;
 	vec3 rorschachsC = vec3(rorschachs);
 	
@@ -92,10 +93,5 @@ void fragment() {
 	vec3 pixelated = texture(screen_texture, vec2(x,y) / VIEWPORT_SIZE).xyz;
 	vec3 finfin = mix(original.rgb+rorschachsC, color, shader_trans);
 	ALBEDO = mix(finfin, pixelated, pixelation);
-	
-	vec2 instrUV = SCREEN_UV;
-	instrUV = scale(instrUV, 3., 3.);
-	vec4 instrTex = texture(instr, instrUV);
-	
-	ALPHA = rorschachsC.r*.8;
+	ALPHA = rorschachsC.r*.7;
 }

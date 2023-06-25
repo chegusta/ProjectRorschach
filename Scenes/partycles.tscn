@@ -6,16 +6,16 @@
 emission_shape = 2
 emission_sphere_radius = 2.0
 scale_min = 0.0
+scale_max = 983.87
 turbulence_enabled = true
 turbulence_noise_strength = 4.6
 turbulence_noise_scale = 6.35
 turbulence_influence_max = 0.53
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kyb8d"]
-transparency = 3
-alpha_hash_scale = 0.86
+transparency = 2
+alpha_scissor_threshold = 0.897
 alpha_antialiasing_mode = 0
-shading_mode = 0
 albedo_texture = ExtResource("1_ss2b1")
 billboard_mode = 1
 

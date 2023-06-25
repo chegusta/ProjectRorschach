@@ -33,6 +33,8 @@ func _ready():
 	mat = get_active_material(0)
 	var currentTexture = tex_array[0]
 	mat.set_shader_parameter("displacement_noise", currentTexture)
+	#EventBus.onStartGame.connect(func(): vignette_timer.start())
+	#vignette_timer.wait_time = 10
 	vignette_timer.timeout.connect(func(): end_timer.start())
 	vignette_timer.timeout.connect(func(): EventBus.onEndgame.emit())
 	end_timer.timeout.connect(func(): EventBus.onRorschach.emit())
@@ -75,8 +77,10 @@ func reset_shader():
 	mat.set_shader_parameter("pixelation", 0)
 	mat.set_shader_parameter("shader_trans", 0)
 	mat.set_shader_parameter("text_strength", 0)
-	mat.set_shader_parameter("rorScale", randf_range(.5,1))
+	mat.set_shader_parameter("rorScale", 2)
 	mat.set_shader_parameter("rorMove", randf_range(-1,1))
+	mat.set_shader_parameter("rorRot", randf_range(0,360))
+	
 	if influence_env == true:
 		env.environment.background_mode = Environment.BG_COLOR
 	Engine.time_scale = 1.

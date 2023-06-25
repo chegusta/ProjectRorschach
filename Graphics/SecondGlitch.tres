@@ -16,5 +16,6 @@ shader_parameter/pixelation = 1.0
 shader_parameter/shader_trans = 1.0
 shader_parameter/rorScale = 1.054
 shader_parameter/rorMove = -0.019
+shader_parameter/rorRot = null
 shader_parameter/displacement_noise = ExtResource("2_ydfcb")
 shader_parameter/instr = ExtResource("3_3jvjk")
