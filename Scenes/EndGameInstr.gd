@@ -26,7 +26,7 @@ func show_end_game():
 	audio_timer.stop()
 	modulate.a = 1;
 	var count: int = get_directory_count()
-	var formated: String = "{int} images classified collectively. You may remove your goggles."
+	var formated: String = "{int} images classified collectively."
 	var stringo: String = formated.format({"int": count})
 	text = stringo
 	
