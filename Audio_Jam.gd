@@ -60,9 +60,9 @@ func _input_pentatonic_playback_speed(delta):
 func _input_strings(delta):
 	if Input.get_action_strength("RT") or Input.get_action_strength("LT"):
 		strings_speed -= Input.get_axis("LT", "RT") * delta
-		if(strings_speed > 2):
-			strings_speed = 2
-		if(strings_speed < .1):
-			strings_speed = .1
+		if(strings_speed > 1.3):
+			strings_speed = 1.3
+		if(strings_speed < .2):
+			strings_speed = .2
 		strings_timer.wait_time = strings_speed
 	

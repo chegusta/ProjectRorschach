@@ -6,3 +6,4 @@ signal onStartGame
 signal onEndgame
 signal onXRReady
 signal onXROff
+signal onGameStop

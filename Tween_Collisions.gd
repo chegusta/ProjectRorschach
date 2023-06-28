@@ -28,6 +28,8 @@ func _ready():
 	set_process(false)
 	EventBus.onImpact.connect(shake_origin)
 	EventBus.onEndgame.connect(func(): isEndGame = true)
+	EventBus.onRorschach.connect(func(): isEndGame = false)
+	EventBus.onGameStop.connect(func(): set_process(false))
 
 func initiate_tween():
 	tweener = create_tween()
@@ -60,10 +62,10 @@ func randomize_endposition():
 	enPos = Vector3(randf_range(-1,1), end.position.y, end.position.z)
 
 func endTween():
-	tweener.kill
+	tweener.kill()
 	initiate_tween()
 
-func _input(event):
+func _input(_event):
 	if Input.is_action_pressed("LYAxisUP") and game_start == false:
 		Engine.time_scale = 1
 		game_start = true
@@ -74,7 +76,7 @@ func _input(event):
 func change_speed_var(osc_input: float):
 	tweener.set_speed_scale(1000./osc_input)
 
-func _process(delta):
+func _process(_delta):
 	head_bang_speed += (Input.get_axis("LYAxisUP", "LYAxisDOWN")) * 8.
 	#print(Input.get_axis("LYAxisUP", "LYAxisDOWN"))
 	if(head_bang_speed < 70):

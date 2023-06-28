@@ -1,16 +1,16 @@
 2a60927148abd1d33b818b535e306557
-::res://::1687701592
-Audio_Jam.gd::GDScript::-1::1687696393::0::1::::<>AudioStreamPlayer<>::
-BetweenSeene.tscn::PackedScene::7408003700312826711::1687384654::0::1::::<><>::res://Scenes/ManageXR.gd
-default_bus_layout.tres::AudioBusLayout::2451701569134268798::1687701357::0::1::::<><>::
-EventBus.gd::GDScript::-1::1687694039::0::1::::<>Node<>::
-export_presets.cfg::TextFile::-1::1687699561::0::1::::<><>::
+::res://::1687944851
+Audio_Jam.gd::GDScript::-1::1687777691::0::1::::<>AudioStreamPlayer<>::
+BetweenSeene.tscn::PackedScene::7408003700312826711::1687705905::0::1::::<><>::res://Scenes/ManageXR.gd
+default_bus_layout.tres::AudioBusLayout::2451701569134268798::1687776476::0::1::::<><>::
+EventBus.gd::GDScript::-1::1687705905::0::1::::<>Node<>::
+export_presets.cfg::TextFile::-1::1687777953::0::1::::<><>::
 icon.svg::CompressedTexture2D::7000608417966578913::1685382200::1685382209::1::::<><>::
-MetaVerseRoomEnvironment.tres::Environment::1292842395946090510::1687701364::0::1::::<><>::
+MetaVerseRoomEnvironment.tres::Environment::1292842395946090510::1687776485::0::1::::<><>::
 openxr_action_map.tres::OpenXRActionMap::4370460286985999764::1685724000::0::1::::<><>::
-Tween_Collisions.gd::GDScript::-1::1687695698::0::1::::<>Node3D<>::
+Tween_Collisions.gd::GDScript::-1::1687776969::0::1::::<>Node3D<>::
 ::res://0000DESKTROPBRANCH/::1687088611
-::res://Audio/::1687702503
+::res://Audio/::1687776485
 chr-11.wav::AudioStreamWAV::293739601624490430::1686763903::1686763903::1::::<><>::
 chr-12.wav::AudioStreamWAV::2631770177950277024::1686763903::1686763903::1::::<><>::
 chr-13.wav::AudioStreamWAV::5629493795327568114::1686763903::1686763903::1::::<><>::
@@ -18,7 +18,7 @@ chr-14.wav::AudioStreamWAV::9161039685974808338::1686763903::1686763903::1::::<>
 chr-15.wav::AudioStreamWAV::2634524836496168539::1686763903::1686763903::1::::<><>::
 chr-16.wav::AudioStreamWAV::6776024008162931917::1686763903::1686763903::1::::<><>::
 cork01.wav::AudioStreamWAV::2769813715471015996::1687009944::1687010661::1::::<><>::
-glados_voice.wav::AudioStreamWAV::4794663358501516129::1687702503::1687702503::1::::<><>::
+glados_voice.wav::AudioStreamWAV::4794663358501516129::1687705905::1687705905::1::::<><>::
 pen-01.wav::AudioStreamWAV::5121198999095464784::1686763898::1686763898::1::::<><>::
 pen-02.wav::AudioStreamWAV::210501206648890324::1686763898::1686763898::1::::<><>::
 pen-03.wav::AudioStreamWAV::8712406319884040500::1686763898::1686763898::1::::<><>::
@@ -29,9 +29,9 @@ pen-07.wav::AudioStreamWAV::3205709243677734326::1686763898::1686763898::1::::<>
 pen-08.wav::AudioStreamWAV::8453423939180468463::1686763898::1686763898::1::::<><>::
 pen-09.wav::AudioStreamWAV::6359322016787358204::1686763898::1686763898::1::::<><>::
 pen-10.wav::AudioStreamWAV::5695653018817228173::1686763898::1686763898::1::::<><>::
-pentatonic.tres::AudioStreamRandomizer::3131810469098193215::1687701364::0::1::::<><>::uid://nnq5jwt51sty<>uid://cdd53bkkcc8v2
-pent_chromatics.tres::AudioStreamRandomizer::4991472612003348313::1687701364::0::1::::<><>::uid://egj33wqm7esk<>uid://bdq34udh3nxlg<>uid://cmg768ayo80qg<>uid://d3rw8q4v8rovy<>uid://bdsgiepqlxqsp<>uid://c3smei8x4uyvt
-pent_regular.tres::AudioStreamRandomizer::940317431398863350::1687701364::0::1::::<><>::uid://ce70ntubbt5xc<>uid://c876ojtl4rke<>uid://dwemcaonyt7ho<>uid://bygx4kul6gawu<>uid://w7mosuffu13l<>uid://d0s5clqv11o6v<>uid://blw4textlq7v3<>uid://dso5wl0jsxemp<>uid://cwurds2txmbea<>uid://cnfatqqehn3yv
+pentatonic.tres::AudioStreamRandomizer::3131810469098193215::1687776485::0::1::::<><>::uid://nnq5jwt51sty<>uid://cdd53bkkcc8v2
+pent_chromatics.tres::AudioStreamRandomizer::4991472612003348313::1687776485::0::1::::<><>::uid://egj33wqm7esk<>uid://bdq34udh3nxlg<>uid://cmg768ayo80qg<>uid://d3rw8q4v8rovy<>uid://bdsgiepqlxqsp<>uid://c3smei8x4uyvt
+pent_regular.tres::AudioStreamRandomizer::940317431398863350::1687776485::0::1::::<><>::uid://ce70ntubbt5xc<>uid://c876ojtl4rke<>uid://dwemcaonyt7ho<>uid://bygx4kul6gawu<>uid://w7mosuffu13l<>uid://d0s5clqv11o6v<>uid://blw4textlq7v3<>uid://dso5wl0jsxemp<>uid://cwurds2txmbea<>uid://cnfatqqehn3yv
 punch01.wav::AudioStreamWAV::3115670071342730026::1686426854::1686426860::1::::<><>::
 punch02.wav::AudioStreamWAV::3182523517678388086::1686426854::1686426860::1::::<><>::
 punch03.wav::AudioStreamWAV::9041652847629669508::1686426854::1686426860::1::::<><>::
@@ -40,37 +40,37 @@ punch_glitched02.wav::AudioStreamWAV::2898621480170536547::1687008487::168700848
 punch_glitched03.wav::AudioStreamWAV::8393182665455311426::1687008487::1687008487::1::::<><>::
 punch_glitched04.wav::AudioStreamWAV::4029018782228889868::1687008487::1687008487::1::::<><>::
 punch_glitched05.wav::AudioStreamWAV::5184945013812072942::1687008487::1687008487::1::::<><>::
-punch_glitched.tres::AudioStreamRandomizer::7339756001485328775::1687701364::0::1::::<><>::uid://j4cagkx1qssv<>uid://bhkd4wmjgt04n<>uid://drtyq0ba8ueu1<>uid://bxnxl6n1dbcy3<>uid://cf4vj0uixrfr7
-randomAudio.tres::AudioStreamRandomizer::7407503862062804274::1687701364::0::1::::<><>::uid://bknivpjygla6u<>uid://bllvxyfgfqodi<>uid://d123x32083yrs
-snap_sound.wav::AudioStreamWAV::6862021981226873920::1687607306::1687607306::1::::<><>::
+punch_glitched.tres::AudioStreamRandomizer::7339756001485328775::1687776485::0::1::::<><>::uid://j4cagkx1qssv<>uid://bhkd4wmjgt04n<>uid://drtyq0ba8ueu1<>uid://bxnxl6n1dbcy3<>uid://cf4vj0uixrfr7
+randomAudio.tres::AudioStreamRandomizer::7407503862062804274::1687776485::0::1::::<><>::uid://bknivpjygla6u<>uid://bllvxyfgfqodi<>uid://d123x32083yrs
+snap_sound.wav::AudioStreamWAV::6862021981226873920::1687705905::1687705905::1::::<><>::
 strings01.wav::AudioStreamWAV::8092601762213038201::1686906813::1686906821::1::::<><>::
 strings02.wav::AudioStreamWAV::8662919946587250225::1686906813::1686906821::1::::<><>::
 strings03.wav::AudioStreamWAV::96437234248659007::1686906813::1686906821::1::::<><>::
 strings04.wav::AudioStreamWAV::7953397146197646839::1686906813::1686906821::1::::<><>::
-strings.tres::AudioStreamRandomizer::868153937775853280::1687701364::0::1::::<><>::uid://dun0oqo0h35ww<>uid://dm4ja5edb7xwl
+strings.tres::AudioStreamRandomizer::868153937775853280::1687776485::0::1::::<><>::uid://dun0oqo0h35ww<>uid://dm4ja5edb7xwl
 strings_glitch01.wav::AudioStreamWAV::5972861493391368836::1686906813::1686906821::1::::<><>::
 strings_glitch02.wav::AudioStreamWAV::4216214884291507180::1686906813::1686906821::1::::<><>::
 strings_glitch03.wav::AudioStreamWAV::7343272516038859005::1686906813::1686906821::1::::<><>::
 strings_glitch04.wav::AudioStreamWAV::5033704231382817880::1686906813::1686906821::1::::<><>::
-strings_glitched.tres::AudioStreamRandomizer::8061943164556973123::1687701364::0::1::::<><>::uid://crdkfkrldg61u<>uid://b1cmpcjqccnno<>uid://dcvevjbu6b7f2<>uid://cdymmxqrn821a
-strings_regular.tres::AudioStreamRandomizer::8591419623723798122::1687701364::0::1::::<><>::uid://dnkd7618upe5v<>uid://dvona45c0w5yj<>uid://bmykpcs4ald4<>uid://dlkxj3csoqy8v
+strings_glitched.tres::AudioStreamRandomizer::8061943164556973123::1687776485::0::1::::<><>::uid://crdkfkrldg61u<>uid://b1cmpcjqccnno<>uid://dcvevjbu6b7f2<>uid://cdymmxqrn821a
+strings_regular.tres::AudioStreamRandomizer::8591419623723798122::1687776485::0::1::::<><>::uid://dnkd7618upe5v<>uid://dvona45c0w5yj<>uid://bmykpcs4ald4<>uid://dlkxj3csoqy8v
 tinitus201.wav::AudioStreamWAV::8140112139295157842::1687018235::1687018256::1::::<><>::
-::res://Graphics/::1687701364
+::res://Graphics/::1687776485
 Abberation.gdshader::Shader::-1::1686215001::0::1::::<><>::
 circle_02.png::CompressedTexture2D::8173768536825091987::1687012729::1687012738::1::::<><>::
 circle_05.png::CompressedTexture2D::5550981862258829480::1687013742::1687013756::1::::<><>::
-EndGameinstr.png::CompressedTexture2D::8790957486432269221::1687605977::1687606106::1::::<><>::
-FirstGlitchMaterial.tres::ShaderMaterial::6887594358979613227::1687701363::0::1::::<><>::res://Graphics/ScreenSpaceFX.gdshader<>uid://d0jsydi1rmm22<>uid://cl7nxgchq2vc3
+EndGameinstr.png::CompressedTexture2D::8790957486432269221::1687705905::1687705905::1::::<><>::
+FirstGlitchMaterial.tres::ShaderMaterial::6887594358979613227::1687776485::0::1::::<><>::res://Graphics/ScreenSpaceFX.gdshader<>uid://d0jsydi1rmm22<>uid://cl7nxgchq2vc3
 ImpactShader.gdshader::Shader::-1::1686330182::0::1::::<><>::
 light_03.png::CompressedTexture2D::8320772400062812851::1687013534::1687013549::1::::<><>::
 MetaVerseRoomEnvironment.tres::Environment::1292842395946090510::1685877230::0::1::::<><>::
-NewGlass.tres::StandardMaterial3D::5185196300825348169::1687701364::0::1::::<><>::
+NewGlass.tres::StandardMaterial3D::5185196300825348169::1687776485::0::1::::<><>::
 Pixelate.gdshader::Shader::-1::1686215001::0::1::::<><>::
 ScreenSpaceFX.gdshader::Shader::-1::1687608401::0::1::::<><>::
-SecondGlitch.tres::ShaderMaterial::457167268585924818::1687701364::0::1::::<><>::res://Scenes/FinalShader.gdshader<>uid://d0jsydi1rmm22<>uid://dxin1x7n2sg6p
+SecondGlitch.tres::ShaderMaterial::457167268585924818::1687776485::0::1::::<><>::res://Scenes/FinalShader.gdshader<>uid://d0jsydi1rmm22<>uid://dxin1x7n2sg6p
 TextShader.gdshader::Shader::-1::1686842467::0::1::::<><>::
-TITLEWARNING.png::CompressedTexture2D::1237625703895241990::1687095452::1687362691::1::::<><>::
-title_warning.png::CompressedTexture2D::8416368795673382646::1687599610::1687599610::1::::<><>::
+TITLEWARNING.png::CompressedTexture2D::1237625703895241990::1687705905::1687705905::1::::<><>::
+title_warning.png::CompressedTexture2D::8416368795673382646::1687705905::1687705905::1::::<><>::
 ViewportDeform.gdshader::Shader::-1::1686228643::0::1::::<><>::
 ::res://Meshes/::1685725418
 HeadBangerTestFranka.glb::PackedScene::7972319304379745690::1685722220::1685725418::1::::<><>::
@@ -113,50 +113,50 @@ Rorschach_blot_02.jpg::CompressedTexture2D::6362258269725762290::1685378499::168
 Rorschach_blot_04.jpg::CompressedTexture2D::8933698477873175569::1685378513::1686329469::1::::<><>::
 Rorschach_blot_05.jpg::CompressedTexture2D::2379227009532501693::1685378521::1686428780::1::::<><>::
 Rorschach_blot_06.jpg::CompressedTexture2D::7511483639572131569::1685378528::1686329467::1::::<><>::
-::res://Scenes/::1687701506
-BetweenSeene.gd::GDScript::-1::1687523472::0::1::::<>Node2D<>::
-BetweenSeene.tscn::PackedScene::6654599911269833410::1687518495::0::1::::<><>::res://Scenes/BetweenSeene.gd
+::res://Scenes/::1687777882
+BetweenSeene.gd::GDScript::-1::1687705905::0::1::::<>Node2D<>::
+BetweenSeene.tscn::PackedScene::6654599911269833410::1687705905::0::1::::<><>::res://Scenes/BetweenSeene.gd
 DistanceToCam.gd::GDScript::-1::1685811457::0::1::::<>SpringArm3D<>::
-EndGameInstr.gd::GDScript::-1::1687607051::0::1::::<>Label3D<>::
-FinalShader.gdshader::Shader::-1::1687701334::0::1::::<><>::
-GameStartFunctions.gd::GDScript::-1::1687532172::0::1::::<>Node<>::
-GetHits.gd::GDScript::-1::1686427518::0::1::::<>Area3D<>::
+EndGameInstr.gd::GDScript::-1::1687777734::0::1::::<>Label3D<>::
+FinalShader.gdshader::Shader::-1::1687705905::0::1::::<><>::
+GameStartFunctions.gd::GDScript::-1::1687705905::0::1::::<>Node<>::
+GetHits.gd::GDScript::-1::1687776893::0::1::::<>Area3D<>::
 head_banger_test_franka.tscn::PackedScene::548658661670854147::1685722314::0::1::::<><>::uid://dlt3605yva8ju
-ManageXR.gd::GDScript::-1::1687528296::0::1::::<>Node<>::
-MetaVerseRoom.tscn::PackedScene::1955976119922000133::1687701506::0::1::::<><>::res://Scenes/GameStartFunctions.gd<>uid://soi6py6nbqxi<>uid://ch6kwg5wtvme4<>uid://cfah1y4hqoato<>res://Tween_Collisions.gd<>uid://cf40op5ftl6e4<>uid://c5enw4025fsjj<>res://Scenes/ScreenSpaceFX.gd<>uid://2qoo36ulv6g0<>uid://ckdgqnb5e5rsr<>uid://l1dn0g6fsbr1<>uid://du1pcbtocns0s<>uid://esjgv24dmodf<>uid://ca7vi7xckxs1<>uid://cbl0bwf3segh4<>uid://erchd84rs4bu<>uid://3mrcn6irpd1<>uid://c8sqptpjiind7<>uid://w3srmb3jouxd<>uid://bn3u7teqt355e<>uid://qrkbsprinrsi<>uid://devo8j31laprn<>res://Scenes/GetHits.gd<>uid://dfehokftqtw6e<>uid://ch5a255v32dhb<>uid://cyy6lgs7gmwxp<>uid://dlxwvj1t8lh1e<>uid://b1ay2p7hbt2vn<>uid://xwk5gohh7oo4<>uid://db7j8mrffrfks<>uid://b3ojauladewba<>uid://bkvcpw00tickt<>res://Audio_Jam.gd<>uid://b1rfmo4ew3ccx<>uid://dctoyduipscd0<>uid://bfpyor4ocs6ia<>uid://13pbydr1j3tc<>res://Scenes/EndGameInstr.gd<>res://Scenes/Toggle_Visiblity.gd<>uid://cj0cpasixytkt<>uid://pams2f4dyaf0<>uid://dnr5mnsk5xxyy<>uid://dntju006wx2pf<>uid://ct41un7b0jotj<>uid://cg6ypmdh6bfca<>uid://b46v530kovg2c<>uid://3dn87b27p6k4<>uid://ddsirhl531j5c<>uid://ctc55uh38o4aj<>uid://c2fxpsgkbonvl<>uid://b6eir35au2hpu<>uid://dvbw0wucfq8wf<>uid://dt13vflpf65ig<>uid://h0ix57auq2kf<>uid://ttw4jtkngkwn<>uid://mmsmsaft6dh5<>uid://dn8eptboy5pe5<>uid://bhkd4wmjgt04n<>res://Scenes/SnapPics.gd<>uid://c41aq8no5m1ii
-new_script.gd::GDScript::-1::1687383588::0::1::::<>Node<>::
-partycles.tscn::PackedScene::9220086004924435950::1687697887::0::1::::<><>::uid://clc64ip1fhdpw
-SceneManagement.gd::GDScript::-1::1687523137::0::1::::<>Node<>::
-ScreenSpaceFX.gd::GDScript::-1::1687700868::0::1::::<>MeshInstance3D<>::
-SnapPics.gd::GDScript::-1::1687607696::0::1::::<>SubViewportContainer<>::
+ManageXR.gd::GDScript::-1::1687705905::0::1::::<>Node<>::
+MetaVerseRoom.tscn::PackedScene::1955976119922000133::1687777882::0::1::::<><>::res://Scenes/GameStartFunctions.gd<>uid://soi6py6nbqxi<>uid://ch6kwg5wtvme4<>uid://cfah1y4hqoato<>res://Tween_Collisions.gd<>uid://cf40op5ftl6e4<>uid://c5enw4025fsjj<>res://Scenes/ScreenSpaceFX.gd<>uid://2qoo36ulv6g0<>uid://ckdgqnb5e5rsr<>uid://l1dn0g6fsbr1<>uid://du1pcbtocns0s<>uid://esjgv24dmodf<>uid://ca7vi7xckxs1<>uid://cbl0bwf3segh4<>uid://erchd84rs4bu<>uid://3mrcn6irpd1<>uid://c8sqptpjiind7<>uid://w3srmb3jouxd<>uid://bn3u7teqt355e<>uid://qrkbsprinrsi<>uid://devo8j31laprn<>res://Scenes/GetHits.gd<>uid://dfehokftqtw6e<>uid://ch5a255v32dhb<>uid://cyy6lgs7gmwxp<>uid://dlxwvj1t8lh1e<>uid://b1ay2p7hbt2vn<>uid://xwk5gohh7oo4<>uid://db7j8mrffrfks<>uid://b3ojauladewba<>uid://bkvcpw00tickt<>res://Audio_Jam.gd<>uid://b1rfmo4ew3ccx<>uid://dctoyduipscd0<>uid://bfpyor4ocs6ia<>uid://13pbydr1j3tc<>res://Scenes/EndGameInstr.gd<>res://Scenes/Toggle_Visiblity.gd<>uid://cj0cpasixytkt<>uid://pams2f4dyaf0<>uid://dnr5mnsk5xxyy<>uid://dntju006wx2pf<>uid://ct41un7b0jotj<>uid://cg6ypmdh6bfca<>uid://b46v530kovg2c<>uid://3dn87b27p6k4<>uid://ddsirhl531j5c<>uid://ctc55uh38o4aj<>uid://c2fxpsgkbonvl<>uid://b6eir35au2hpu<>uid://dvbw0wucfq8wf<>uid://dt13vflpf65ig<>uid://h0ix57auq2kf<>uid://ttw4jtkngkwn<>uid://mmsmsaft6dh5<>uid://caktn1gllyxjd<>uid://dn8eptboy5pe5<>uid://bhkd4wmjgt04n<>res://Scenes/SnapPics.gd<>uid://c41aq8no5m1ii
+new_script.gd::GDScript::-1::1687705905::0::1::::<>Node<>::
+partycles.tscn::PackedScene::9220086004924435950::1687705905::0::1::::<><>::uid://clc64ip1fhdpw
+SceneManagement.gd::GDScript::-1::1687705905::0::1::::<>Node<>::
+ScreenSpaceFX.gd::GDScript::-1::1687705905::0::1::::<>MeshInstance3D<>::
+SnapPics.gd::GDScript::-1::1687705905::0::1::::<>SubViewportContainer<>::
 Toggle_Visiblity.gd::GDScript::-1::1687010971::0::1::::<>Node3D<>::
 xr_test.tscn::PackedScene::7348631104786491085::1685809895::0::1::::<><>::res://Scenes/ManageXR.gd
-::res://SD_rorschachs/::1687699165
-00816-2313058509-rorschach image.png::CompressedTexture2D::825957791691442592::1687699137::1687699165::1::::<><>::
-00818-1913286785-rorschach image.png::CompressedTexture2D::8617627154438747060::1687699137::1687699138::1::::<><>::
-00819-1982344258-rorschach image.png::CompressedTexture2D::4867259241466094115::1687699137::1687699138::1::::<><>::
-00821-2813772908-rorschach image black and white.png::CompressedTexture2D::315983940803695146::1687699137::1687699138::1::::<><>::
-00822-2989230649-rorschach image black and white.png::CompressedTexture2D::1603081034626364961::1687699137::1687699138::1::::<><>::
-00823-1689020476-rorschach image black and white.png::CompressedTexture2D::1158725845125096824::1687699137::1687699138::1::::<><>::
-00825-424498503-rorschach image black and white.png::CompressedTexture2D::7484278844724993659::1687699137::1687699138::1::::<><>::
-00826-3123438136-rorschach image black and white.png::CompressedTexture2D::5326144444946917299::1687699137::1687699138::1::::<><>::
-00830-3858464946-rorschach image black and white animal.png::CompressedTexture2D::7980193808736778844::1687699137::1687699138::1::::<><>::
-00833-1441087263-rorschach image black and white.png::CompressedTexture2D::7296117023757418034::1687699137::1687699138::1::::<><>::
-00834-325364559-rorschach image black and white.png::CompressedTexture2D::4381157114513785994::1687699137::1687699138::1::::<><>::
-00835-3805398968-rorschach image black and white.png::CompressedTexture2D::4246750834930124387::1687699137::1687699138::1::::<><>::
-00836-3662213932-rorschach image black and white.png::CompressedTexture2D::1883626318390267968::1687699137::1687699138::1::::<><>::
-00837-1256531550-rorschach image black and white.png::CompressedTexture2D::5456298653075758563::1687699137::1687699138::1::::<><>::
-00839-782567416-rorschach image black and white vague motif.png::CompressedTexture2D::1053594829951027219::1687699137::1687699138::1::::<><>::
-00841-569489086-rorschach image black and white vague motif.png::CompressedTexture2D::8108655090608000124::1687699137::1687699137::1::::<><>::
-00844-2700447001-rorschach computer black and white.png::CompressedTexture2D::8111523717656553255::1687699137::1687699137::1::::<><>::
-00845-2966421947-rorschach computer black and white.png::CompressedTexture2D::6167911441383084479::1687699137::1687699137::1::::<><>::
-00846-3095622898-rorschach computer black and white.png::CompressedTexture2D::5259454769599352560::1687699137::1687699137::1::::<><>::
-00847-1467596252-rorschach computer black and white.png::CompressedTexture2D::4487222999984946488::1687699137::1687699137::1::::<><>::
-00848-1874200163-rorschach computer black and white.png::CompressedTexture2D::1972330690794065669::1687699137::1687699137::1::::<><>::
-00849-339648932-rorschach human face black and white.png::CompressedTexture2D::6112434298214586301::1687699137::1687699137::1::::<><>::
-00850-2601269623-rorschach human face black and white.png::CompressedTexture2D::6679686267270963145::1687699137::1687699137::1::::<><>::
-00851-2399183400-rorschach human face black and white.png::CompressedTexture2D::4571049958952592070::1687699137::1687699137::1::::<><>::
-00852-1918384009-rorschach human face black and white.png::CompressedTexture2D::8636673750428539397::1687699137::1687699137::1::::<><>::
-00853-1181030293-rorschach human face black and white.png::CompressedTexture2D::8548261759576002166::1687699137::1687699137::1::::<><>::
-00854-137456501-rorschach human face black and white.png::CompressedTexture2D::543459783681298181::1687699137::1687699137::1::::<><>::
-00855-3493992231-rorschach human face black and white.png::CompressedTexture2D::1374199270847265185::1687699137::1687699137::1::::<><>::
+::res://SD_rorschachs/::1687705905
+00816-2313058509-rorschach image.png::CompressedTexture2D::825957791691442592::1687705905::1687705905::1::::<><>::
+00818-1913286785-rorschach image.png::CompressedTexture2D::8617627154438747060::1687705905::1687705905::1::::<><>::
+00819-1982344258-rorschach image.png::CompressedTexture2D::4867259241466094115::1687705905::1687705905::1::::<><>::
+00821-2813772908-rorschach image black and white.png::CompressedTexture2D::315983940803695146::1687705905::1687705905::1::::<><>::
+00822-2989230649-rorschach image black and white.png::CompressedTexture2D::1603081034626364961::1687705905::1687705905::1::::<><>::
+00823-1689020476-rorschach image black and white.png::CompressedTexture2D::1158725845125096824::1687705905::1687705905::1::::<><>::
+00825-424498503-rorschach image black and white.png::CompressedTexture2D::7484278844724993659::1687705905::1687705905::1::::<><>::
+00826-3123438136-rorschach image black and white.png::CompressedTexture2D::5326144444946917299::1687705905::1687705905::1::::<><>::
+00830-3858464946-rorschach image black and white animal.png::CompressedTexture2D::7980193808736778844::1687705905::1687705905::1::::<><>::
+00833-1441087263-rorschach image black and white.png::CompressedTexture2D::7296117023757418034::1687705905::1687705905::1::::<><>::
+00834-325364559-rorschach image black and white.png::CompressedTexture2D::4381157114513785994::1687705905::1687705905::1::::<><>::
+00835-3805398968-rorschach image black and white.png::CompressedTexture2D::4246750834930124387::1687705905::1687705905::1::::<><>::
+00836-3662213932-rorschach image black and white.png::CompressedTexture2D::1883626318390267968::1687705905::1687705905::1::::<><>::
+00837-1256531550-rorschach image black and white.png::CompressedTexture2D::5456298653075758563::1687705905::1687705905::1::::<><>::
+00839-782567416-rorschach image black and white vague motif.png::CompressedTexture2D::1053594829951027219::1687705905::1687705905::1::::<><>::
+00841-569489086-rorschach image black and white vague motif.png::CompressedTexture2D::8108655090608000124::1687705905::1687705905::1::::<><>::
+00844-2700447001-rorschach computer black and white.png::CompressedTexture2D::8111523717656553255::1687705905::1687705905::1::::<><>::
+00845-2966421947-rorschach computer black and white.png::CompressedTexture2D::6167911441383084479::1687705905::1687705905::1::::<><>::
+00846-3095622898-rorschach computer black and white.png::CompressedTexture2D::5259454769599352560::1687705905::1687705905::1::::<><>::
+00847-1467596252-rorschach computer black and white.png::CompressedTexture2D::4487222999984946488::1687705905::1687705905::1::::<><>::
+00848-1874200163-rorschach computer black and white.png::CompressedTexture2D::1972330690794065669::1687705905::1687705905::1::::<><>::
+00849-339648932-rorschach human face black and white.png::CompressedTexture2D::6112434298214586301::1687705905::1687705905::1::::<><>::
+00850-2601269623-rorschach human face black and white.png::CompressedTexture2D::6679686267270963145::1687705905::1687705905::1::::<><>::
+00851-2399183400-rorschach human face black and white.png::CompressedTexture2D::4571049958952592070::1687705905::1687705905::1::::<><>::
+00852-1918384009-rorschach human face black and white.png::CompressedTexture2D::8636673750428539397::1687705905::1687705905::1::::<><>::
+00853-1181030293-rorschach human face black and white.png::CompressedTexture2D::8548261759576002166::1687705905::1687705905::1::::<><>::
+00854-137456501-rorschach human face black and white.png::CompressedTexture2D::543459783681298181::1687705905::1687705905::1::::<><>::
+00855-3493992231-rorschach human face black and white.png::CompressedTexture2D::1374199270847265185::1687705905::1687705905::1::::<><>::
